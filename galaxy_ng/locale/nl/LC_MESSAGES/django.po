@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-01 05:38+0000\n"
+"POT-Creation-Date: 2026-05-01 07:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,29 +15,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: _vendor/automated_logging/templates/dal/admin/view.html:6
-msgid "Back to list"
-msgstr ""
-
-#: app/access_control/access_policy.py:410
+#: app/access_control/access_policy.py:444
 msgid "Namespace in filename not found."
 msgstr "Namespace in bestandsnaam niet gevonden."
 
-#: app/access_control/access_policy.py:443
+#: app/access_control/access_policy.py:473
 msgid "Distribution does not exist."
 msgstr ""
 
-#: app/access_control/access_policy.py:457
+#: app/access_control/access_policy.py:487
 msgid "Namespace not found."
 msgstr "Namespace niet gevonden."
 
-#: app/access_control/access_policy.py:526
+#: app/access_control/access_policy.py:560
 msgid ""
-"Signatures are required in order to add collections into any "
-"'approved'repository when GALAXY_REQUIRE_SIGNATURE_FOR_APPROVAL is enabled."
+"Signatures are required in order to add collections into any 'approved' "
+"repository when GALAXY_REQUIRE_SIGNATURE_FOR_APPROVAL is enabled."
 msgstr ""
 
-#: app/access_control/access_policy.py:574 app/api/v3/views/sync.py:49
+#: app/access_control/access_policy.py:611 app/api/v3/views/sync.py:49
 msgid ""
 "Syncing content from galaxy.ansible.com without specifying a requirements "
 "file is not allowed."
@@ -266,24 +262,33 @@ msgstr "Een groep met de naam %s bestaat al."
 
 #: app/api/ui/v2/serializers.py:146
 #, python-format
-#| msgid "Group name=%(name)s, id=%(id)s does not exist"
 msgid "Team name=%(name)s, id=%(id)s does not exist"
 msgstr ""
 
 #: app/api/ui/v2/serializers.py:150
-#| msgid "Invalid group name or ID"
 msgid "Invalid team name or ID"
 msgstr ""
 
 #: app/api/ui/v2/serializers.py:164
 #, python-format
-#| msgid "Group name=%(name)s, id=%(id)s does not exist"
 msgid "Org name=%(name)s, id=%(id)s does not exist"
 msgstr ""
 
 #: app/api/ui/v2/serializers.py:168
-#| msgid "Invalid group name or ID"
 msgid "Invalid org name or ID"
+msgstr ""
+
+#: app/api/ui/v2/views.py:80
+msgid "Request should be made to '/api/gateway/v1/users/'."
+msgstr ""
+
+#: app/api/ui/v2/views.py:130 app/api/ui/v2/views.py:174
+msgid "Request should be made to '/api/gateway/v1/teams/'."
+msgstr ""
+
+#: app/api/ui/v2/views.py:192
+#| msgid "A local container with this name already exists."
+msgid "A team with this name already exists."
 msgstr ""
 
 #: app/api/utils.py:58
@@ -379,37 +384,37 @@ msgstr "De %s op afstand heeft geen registers die ermee zijn geassocieerd."
 msgid "Namespace \"{0}\" does not exist."
 msgstr "Namespace \"{0}\" bestaat niet."
 
-#: app/api/v3/viewsets/collection.py:212
+#: app/api/v3/viewsets/collection.py:222
 #, python-format
 msgid "Unexpected response from content app. Code: %s."
 msgstr "Onverwachte reactie van inhoud app. Code: %s."
 
-#: app/api/v3/viewsets/collection.py:240
+#: app/api/v3/viewsets/collection.py:250
 #, python-format
 msgid "Collection %s not found"
 msgstr "Collectie %s niet gevonden"
 
-#: app/api/v3/viewsets/collection.py:250
+#: app/api/v3/viewsets/collection.py:264
 #, python-format
 msgid "Repo(s) for moving collection %s not found"
 msgstr "Repo('s) voor verplaatsen collectie %s niet gevonden"
 
-#: app/api/v3/viewsets/collection.py:290
+#: app/api/v3/viewsets/collection.py:304
 #, python-format
 msgid "Collection %s not found in source repo"
 msgstr "Collectie %s niet gevonden in bron-repo"
 
-#: app/api/v3/viewsets/collection.py:293
+#: app/api/v3/viewsets/collection.py:307
 #, python-format
 msgid "Collection %s already found in destination repo"
 msgstr "Collectie %s reeds gevonden in doel-repo"
 
-#: app/api/v3/viewsets/collection.py:319
+#: app/api/v3/viewsets/collection.py:333
 #, python-format
 msgid "Signing %s service not found"
 msgstr "Ondertekeningdienst %s niet gevonden"
 
-#: app/api/v3/viewsets/collection.py:332
+#: app/api/v3/viewsets/collection.py:346
 #, python-brace-format
 msgid ""
 "Collection {namespace}.{name} could not be approved because system requires "
@@ -941,10 +946,27 @@ msgstr ""
 msgid "Data conflicts with existing entity."
 msgstr "Gegevens conflicteren met bestaande entiteit."
 
-#: app/management/commands/populate-role-tags.py:19
+#: app/management/commands/populate-role-tags.py:16
 msgid ""
 "Populate the 'LegacyRoleTag' model with tags from LegacyRole "
 "'full_metadata__tags'."
+msgstr ""
+
+#: app/management/commands/purge-tasks.py:38
+msgid "Purge finished tasks."
+msgstr ""
+
+#: app/management/commands/purge-tasks.py:43
+msgid "Tasks with this date and older will be purged from the system"
+msgstr ""
+
+#: app/management/commands/purge-tasks.py:49
+msgid ""
+"Tasks with this date and older than this days will be purged from the system"
+msgstr ""
+
+#: app/management/commands/purge-tasks.py:55
+msgid "Do not delete anything."
 msgstr ""
 
 #: app/tasks/index_registry.py:27
